@@ -2,12 +2,8 @@ from app import sum
 import os
 
 
-
-
-
 def test_sum():
     assert sum(1, 2) == 3
-
 
 
 def test_mock(monkeypatch):
