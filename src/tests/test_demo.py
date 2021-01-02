@@ -1,9 +1,16 @@
+import pytest
+
 from app import sum
 import os
 
 
 def test_sum():
     assert sum(1, 2) == 3
+
+
+@pytest.mark.slow
+def test_slow():
+    assert True
 
 
 def test_mock(monkeypatch):
